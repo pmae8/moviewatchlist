@@ -9,7 +9,7 @@ searchButton.addEventListener("click", () => {
 });
 
 function fetchMovies(title) {
-    const url = `http://www.omdbapi.com/?s=${title}&apikey=${apiKey}`;
+    const url = `https://www.omdbapi.com/?s=${title}&apikey=${apiKey}`;
     fetch(url)
         .then(response => response.json())
         .then(data => {
@@ -29,7 +29,7 @@ function fetchMovies(title) {
 }
 
 function fetchMovieDetails(imdbID) {
-    const url = `http://www.omdbapi.com/?i=${imdbID}&apikey=${apiKey}`;
+    const url = `https://www.omdbapi.com/?i=${imdbID}&apikey=${apiKey}`;
     fetch(url)
         .then(response => response.json())
         .then(movie => {
